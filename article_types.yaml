@@ -77,8 +77,8 @@
     "signage"
   ],
   "negative_keywords": {
-    "gear_or_commerce": ["camera review", "lens review", "gear", "specs", "hands-on", "deal", "sale", "discount", "best camera", "best lens"],
+    "gear_or_commerce": ["camera review", "lens review", "review", "gear", "specs", "hands-on", "deal", "sale", "discount", "best camera", "best lens"],
     "tips_or_beginner": ["tips", "beginner", "how to", "settings", "tutorial", "guide"],
-    "ai_phone_software": ["ai image", "ai-generated", "generative ai", "smartphone feature", "phone feature", "software update", "firmware", "app update"]
+    "ai_phone_software": ["ai image", "ai-generated", "generative ai", "smartphone", "smartphone feature", "phone feature", "software", "software update", "firmware", "app update"]
   }
 }

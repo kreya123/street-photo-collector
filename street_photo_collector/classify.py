@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import re
-from urllib.parse import unquote, urlsplit
 
 from .models import Article
 from .text import clean_text
@@ -16,6 +15,7 @@ NAME_STOPWORDS = {
     "British Journal",
     "The Independent",
     "Street Photo",
+    "Street Photography Awards",
     "New York",
     "Los Angeles",
     "United States",
@@ -141,10 +141,6 @@ class ArticleClassifier:
             if candidate and not _looks_like_generic_label(candidate):
                 return clean_text(candidate, 120)
 
-        slug = urlsplit(article.url).path.rstrip("/").split("/")[-1]
-        slug = unquote(slug).replace("-", " ").replace("_", " ").strip()
-        if slug and len(slug.split()) >= 2 and not _looks_like_generic_label(slug):
-            return clean_text(slug.title(), 120)
         return "Unknown"
 
 
@@ -169,5 +165,24 @@ def _clean_name(value: str) -> str:
 
 def _looks_like_generic_label(value: str) -> bool:
     lowered = value.lower()
-    generic = ["street photography", "photography", "award", "awards", "news", "events", "magazine", "home"]
+    generic = [
+        "street photography",
+        "photography",
+        "award",
+        "awards",
+        "news",
+        "events",
+        "magazine",
+        "home",
+        "best camera",
+        "best lens",
+        "camera review",
+        "lens review",
+        "gear",
+        "specs",
+        "settings",
+        "how to",
+        "tips",
+        "beginner",
+    ]
     return any(item == lowered or lowered.startswith(item + " ") for item in generic)

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import re
+
 from .models import Article
 
 
@@ -25,7 +27,7 @@ class ArticleScorer:
 
     def score(self, article: Article, source_score: float = 0.0) -> Article:
         text = f"{article.title}\n{article.summary}\n{article.url}".lower()
-        score = float(source_score)
+        score = 0.0
 
         if article.photographer_name != "Unknown":
             score += self.rules.get("named_photographer", 5)
@@ -42,11 +44,11 @@ class ArticleScorer:
         if _contains_any(text, self.street_visual_keywords):
             score += self.rules.get("street_visual_language", 3)
 
-        if _contains_any(text, self.negative_keywords.get("gear_or_commerce", [])):
+        if _contains_negative(text, self.negative_keywords.get("gear_or_commerce", [])):
             score += self.rules.get("gear_or_commerce", -8)
-        if _contains_any(text, self.negative_keywords.get("tips_or_beginner", [])):
+        if _contains_negative(text, self.negative_keywords.get("tips_or_beginner", [])):
             score += self.rules.get("tips_or_beginner", -5)
-        if _contains_any(text, self.negative_keywords.get("ai_phone_software", [])):
+        if _contains_negative(text, self.negative_keywords.get("ai_phone_software", [])):
             score += self.rules.get("ai_phone_software", -5)
         if not self.has_strong_relationship(article):
             score += self.rules.get("weak_title_relationship", -3)
@@ -57,10 +59,35 @@ class ArticleScorer:
 
     @staticmethod
     def has_strong_relationship(article: Article) -> bool:
+        title = article.title.lower()
+        title_keywords = (
+            "profile",
+            "feature",
+            "interview",
+            "portfolio",
+            "series",
+            "project",
+            "exhibition",
+            "solo show",
+            "group show",
+            "gallery",
+            "museum",
+            "photobook",
+            "photo book",
+            "monograph",
+            "zine",
+            "book launch",
+            "award",
+            "winner",
+            "finalist",
+            "shortlist",
+            "contest results",
+        )
         return (
-            article.article_type != "Other"
+            any(keyword in title for keyword in title_keywords)
             or article.photographer_name != "Unknown"
             or article.project_name != "Unknown"
+            or re.search(r"\b[A-Z][A-Za-z'’.-]+\s+[A-Z][A-Za-z'’.-]+\b", article.title) is not None
         )
 
 
@@ -82,3 +109,17 @@ def explain_selection(article: Article, article_type_config: dict[str, object]) 
 
 def _contains_any(text: str, keywords: set[str] | list[str]) -> bool:
     return any(keyword.lower() in text for keyword in keywords)
+
+
+def _contains_negative(text: str, keywords: list[str]) -> bool:
+    for keyword in keywords:
+        lowered = keyword.lower()
+        if lowered == "review":
+            if "exhibition review" in text:
+                continue
+            if any(context in text for context in ("camera review", "lens review", "gear review", "equipment review")):
+                return True
+            continue
+        if lowered in text:
+            return True
+    return False

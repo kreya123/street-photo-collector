@@ -1,26 +1,11 @@
 # Overseas Street Photography Watchlist
 
-Generated: 2026-06-15T22:36:41
+Generated: 2026-06-15T22:47:16
 
 Focus: photographers, projects, exhibitions, photobooks, and award results.
 Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humor or Decisive Moment > Candid > Street Portrait > Street Fashion
 
-## 1. Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
-
-- Title: Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
-- Source: PhMuseum
-- URL: https://phmuseum.com/news/dispatches-from-the-front-sergey-melnitchenkos-collective-memory-project
-- Date: Unknown
-- Article Type: Award or Contest Result
-- Photographer Name: Sergey Melnitchenko
-- Project / Series / Book / Exhibition Name: Ukranian Collective Memory
-- Detected Street Genre: Silent Stories
-- Matched Keywords: awards, memory, project
-- Relevance Score: 26.05
-- Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
-- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
-
-## 2. Claudia Andujar – Genocídio do Yanomami
+## 1. Claudia Andujar – Genocídio do Yanomami
 
 - Title: Claudia Andujar – Genocídio do Yanomami
 - Source: VOID
@@ -31,11 +16,11 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: Genocídio do Yanomami
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 3. Pia Paulina Guilmoth & Jesse Bull Saffire – Fishworm
+## 2. Pia Paulina Guilmoth & Jesse Bull Saffire – Fishworm
 
 - Title: Pia Paulina Guilmoth & Jesse Bull Saffire – Fishworm
 - Source: VOID
@@ -46,11 +31,11 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: Fishworm
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 4. Joselito Verschaeve – As Long As The Sun Lasts
+## 3. Joselito Verschaeve – As Long As The Sun Lasts
 
 - Title: Joselito Verschaeve – As Long As The Sun Lasts
 - Source: VOID
@@ -61,11 +46,11 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: As Long As The Sun Lasts
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 5. Jeff Mermelstein – What if Jeff were a Butterfly?
+## 4. Jeff Mermelstein – What if Jeff were a Butterfly?
 
 - Title: Jeff Mermelstein – What if Jeff were a Butterfly?
 - Source: VOID
@@ -76,11 +61,11 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: What if Jeff were a Butterfly?
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 6. Siri Kaur – Sistermoon
+## 5. Siri Kaur – Sistermoon
 
 - Title: Siri Kaur – Sistermoon
 - Source: VOID
@@ -91,11 +76,11 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: Sistermoon
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 7. Raymond Thompson Jr – It’s hard to stop rebels that time travel
+## 6. Raymond Thompson Jr – It’s hard to stop rebels that time travel
 
 - Title: Raymond Thompson Jr – It’s hard to stop rebels that time travel
 - Source: VOID
@@ -106,9 +91,24 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Project / Series / Book / Exhibition Name: It’s hard to stop rebels that time travel
 - Detected Street Genre: Silent Stories
 - Matched Keywords: photo book, publisher
-- Relevance Score: 26.05
+- Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
 - Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+
+## 7. Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
+
+- Title: Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
+- Source: PhMuseum
+- URL: https://phmuseum.com/news/dispatches-from-the-front-sergey-melnitchenkos-collective-memory-project
+- Date: Unknown
+- Article Type: Award or Contest Result
+- Photographer Name: Sergey Melnitchenko
+- Project / Series / Book / Exhibition Name: Ukranian Collective Memory
+- Detected Street Genre: Silent Stories
+- Matched Keywords: awards, memory, project
+- Relevance Score: 22.55
+- Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
+- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 8. Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
 
@@ -120,40 +120,40 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Photographer Name: Hans Van Der
 - Project / Series / Book / Exhibition Name: From The Fields Of Europe By Hans Van Der Meer
 - Detected Street Genre: Silent Stories
-- Matched Keywords: awards
-- Relevance Score: 25.55
+- Matched Keywords: awards, review
+- Relevance Score: 22.05
 - Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
 - Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
 
-## 9. 13 Photobooks For Spring 2026
+## 9. “Transcendent Country of the Mind” by Sari Soininen
 
-- Title: 13 Photobooks For Spring 2026
-- Source: PhMuseum
-- URL: https://phmuseum.com/news/a-spring-guide-to-photobooks
-- Date: Unknown
-- Article Type: Award or Contest Result
-- Photographer Name: Photobooks For Spring
-- Project / Series / Book / Exhibition Name: A Spring Guide To Photobooks
-- Detected Street Genre: Silent Stories
-- Matched Keywords: awards, guide
-- Relevance Score: 25.55
-- Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
-- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
+- Title: “Transcendent Country of the Mind” by Sari Soininen
+- Source: Burn Magazine
+- URL: https://www.burnmagazine.org/essays/2023/05/transcendent-country-of-the-mind-by-sari-soininen/
+- Date: 2023-05-27
+- Article Type: Portfolio or Series
+- Photographer Name: Sari Soininen
+- Project / Series / Book / Exhibition Name: Transcendent Country of the Mind
+- Detected Street Genre: Fine Art Street
+- Matched Keywords: project
+- Relevance Score: 19.65
+- Why this was selected: The article appears to introduce a coherent project, series, or portfolio.
+- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
 
-## 10. The Photographer Who Made Absence Her Muse
+## 10. Jan Staller – Manhattan Project
 
-- Title: The Photographer Who Made Absence Her Muse
-- Source: Aperture
-- URL: https://aperture.org/editorial/the-photographer-who-made-absence-her-muse/
-- Date: 2026-06-04
-- Article Type: Photographer Feature
-- Photographer Name: Made Absence Her
-- Project / Series / Book / Exhibition Name: The Photographer Who Made Absence Her Muse
-- Detected Street Genre: Silent Stories
-- Matched Keywords: absence, photographer
-- Relevance Score: 23.55
-- Why this was selected: This appears to center on a photographer or artist rather than general photography news.
-- Why this may be useful for my photography: Use it to study how one photographer builds a viewpoint, subject distance, and recurring visual concerns. Pay special attention to absence, trace, memory, and quiet human presence.
+- Title: Jan Staller – Manhattan Project
+- Source: Photobook Journal
+- URL: https://photobookjournal.com/2026/06/11/jan-staller-manhattan-project/
+- Date: 2026-06-11
+- Article Type: Portfolio or Series
+- Photographer Name: Jan Staller
+- Project / Series / Book / Exhibition Name: Manhattan Project
+- Detected Street Genre: Fine Art Street
+- Matched Keywords: city, project, review
+- Relevance Score: 19.65
+- Why this was selected: The article appears to introduce a coherent project, series, or portfolio.
+- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
 
 ---
 
