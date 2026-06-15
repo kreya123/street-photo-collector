@@ -1,35 +1,113 @@
 # Street Photo Collector
 
-海外のストリート写真情報から、一般ニュースではなく「作家・作品・展示・写真集・アワード結果」に紐づく記事を優先して収集するPython MVPです。
+海外のストリート写真情報から、一般的な street photography ニュースではなく、作家・作品・展示・写真集・受賞に紐づく記事を優先して収集・分類・スコアリングする Python MVP です。
 
-OpenAI API、Anthropic API、News API、Google APIなどのAPIキーは使いません。RSSまたは公開HTMLだけを軽く取得し、取得困難なサイトは深追いしない設計です。Instagram、X、Facebookのスクレイピングもしません。
+OpenAI API、Anthropic API、News API、Google API などの有料 API や API キーは使いません。RSS または公開 HTML を軽く取得し、RSS が無い・取得困難なサイトは深追いしません。Instagram / X / Facebook のスクレイピングも追加しません。
 
-## 収集方針
+## 全体方針
 
-優先する記事:
+記事収集に加えて、以下を行います。
 
-- 個人フォトグラファー特集: profile / feature / interview / portfolio / series / project
-- 写真展: exhibition / solo show / group show / gallery / museum / exhibition review
-- フォトブック: photobook / photo book / monograph / zine / book launch / publisher feature
-- 写真コンテスト結果: award / winner / finalist / shortlist / contest results
+- Article Type の分類
+- Detected Street Genre の判定
+- 加点・減点による Relevance Score 計算
+- Photographer Name の抽出
+- Project / Series / Book / Exhibition Name の抽出
+- Matched Keywords の記録
+- Markdown / NotebookLM 用 Markdown / CSV の生成
 
-低優先・減点する記事:
+## 優先して拾う記事
 
-- camera review / lens review / gear / specs / hands-on / deal / sale / discount
-- tips / beginner / how to / settings / best camera / best lens
-- AI画像生成、スマホ新機能、ソフトウェア更新など作品紹介と関係ない記事
+- 作家特集: `profile` / `feature` / `interview` / `portfolio` / `series` / `project`
+- 写真展: `exhibition` / `solo show` / `group show` / `gallery` / `museum` / `exhibition review`
+- 写真集: `photobook` / `photo book` / `monograph` / `zine` / `book launch` / `publisher feature`
+- 受賞: `award` / `winner` / `finalist` / `shortlist` / `contest results`
+
+## 低優先・減点する記事
+
+- `camera review` / `lens review` / `gear` / `specs` / `hands-on` / `deal` / `sale` / `discount`
+- `tips` / `beginner` / `how to` / `settings` / `best camera` / `best lens`
+- AI 画像生成、スマホ新機能、ソフトウェア更新など作品紹介と関係ない記事
 - 作家・作品・展示・写真集・受賞結果に紐づかない一般論記事
 
-## 出力
+## ファイル別の変更点
 
-実行すると以下を生成します。
+### sources.yaml
 
-- `output.md`: 読むための通常レポート
-- `notebooklm_import.md`: NotebookLMなどに読み込ませやすい研究用Markdown
-- `articles.csv`: 表計算・フィルタ用CSV
-- `data/seen.sqlite3`: 重複URL管理用SQLite
+優先ソースを以下に更新しています。
 
-各記事には以下を出力します。
+LensCulture / The Independent Photographer / Street Photography Magazine / Magnum Photos / British Journal of Photography(1854) / Aperture / PhMuseum / Huck / It's Nice That / The Photographers' Gallery / Foam / F-Stop Magazine / Burn Magazine / Lenscratch / Photobook Journal / MACK / VOID / Loose Joints / Setanta Books / Paris Photo / Photo London / World Street Photo Awards
+
+RSS があるサイトは RSS を優先し、RSS が無いサイトは HTML から取得します。取得困難なサイトは深追いせず Fetch Notes に残します。
+
+### article_types.yaml
+
+記事タイプを以下の7種で定義します。
+
+- `Photographer Feature`
+- `Interview`
+- `Portfolio or Series`
+- `Exhibition`
+- `Photobook`
+- `Award or Contest Result`
+- `Other`
+
+各タイプに対応する判定キーワード、選定理由、撮影への活用説明を持たせています。
+
+### genres.yaml
+
+Detected Street Genre 用に以下の7ジャンルと判定キーワードを定義します。
+
+- `Candid`
+- `Street Portrait`
+- `Street Fashion`
+- `Fine Art Street`
+- `Urban Landscape`
+- `Humor or Decisive Moment`
+- `Silent Stories`
+
+### street_photo_collector/classify.py
+
+各記事について以下を行います。
+
+- `article_types.yaml` に基づく Article Type 判定
+- `genres.yaml` に基づく Detected Street Genre 判定
+- Photographer Name 抽出。不明なら `Unknown`
+- Project / Series / Book / Exhibition Name 抽出。不明なら `Unknown`
+- Matched Keywords の記録
+
+### street_photo_collector/scoring.py
+
+加点・減点ルールを実装します。
+
+加点:
+
+- 作家名あり: `+5`
+- 作品シリーズ・プロジェクト・ポートフォリオ名あり: `+5`
+- `exhibition` / `gallery` / `museum` / `solo show` / `group show`: `+4`
+- `photobook` / `photo book` / `monograph` / `zine` / `book launch`: `+4`
+- `award` / `winner` / `finalist` / `shortlist` / `contest results`: `+4`
+- `interview` / `profile` / `feature` / `portfolio` / `series` / `project`: `+4`
+- 作風語: `+3`
+
+減点:
+
+- `gear` / `specs` / `review` / `deal` / `sale` / `discount`: `-8`
+- `tips` / `beginner` / `how to` / `settings`: `-5`
+- 作品と無関係な AI / スマホ / ソフト記事: `-5`
+- タイトルから作家・展示・写真集・受賞・シリーズの関係が見えない: `-3`
+
+合計を `Relevance Score` として記事に付与します。
+
+### 出力生成
+
+以下の3ファイルを生成します。
+
+- `output.md`
+- `notebooklm_import.md`
+- `articles.csv`
+
+3ファイルとも次の項目を揃えて出力します。
 
 - Title
 - Source
@@ -44,13 +122,7 @@ OpenAI API、Anthropic API、News API、Google APIなどのAPIキーは使いま
 - Why this was selected
 - Why this may be useful for my photography
 
-## 設定ファイル
-
-- `sources.yaml`: 巡回先、RSS URL、HTML fallback、ソース別加点、除外URLパターン
-- `genres.yaml`: ストリート写真ジャンル別キーワード
-- `article_types.yaml`: 記事タイプ、高スコア/低スコア条件、説明テンプレート
-
-このMVPは外部依存なしで動くように、設定ファイルをJSON互換YAMLで書いています。将来 `PyYAML` を導入した場合は通常のYAMLも読み込めます。
+`Why this may be useful for my photography` は AI 要約ではなく、Article Type と Matched Keywords に基づくルールベース説明です。
 
 ## 実行方法
 
@@ -64,7 +136,7 @@ py -m street_photo_collector --limit 30 --per-source 12 --min-score 4
 python -m street_photo_collector --limit 30 --per-source 12 --min-score 4
 ```
 
-取得済みURLも含めて再出力を確認したい場合:
+取得済み URL も含めて再出力を確認したい場合:
 
 ```bash
 python -m street_photo_collector --limit 30 --per-source 12 --min-score 4 --include-seen
@@ -78,17 +150,24 @@ python -m street_photo_collector --limit 30 --per-source 12 --min-score 4 --incl
 - UTC: 日曜・水曜 22:00
 - 日本時間: 月曜・木曜 07:00
 
-つまり、次回の日本時間木曜日の定期実行から新条件が使われます。
+次回の日本時間木曜日の定期実行から新条件が使われます。
 
-Actionsは以下を更新コミットします。
+Actions の実行コマンド:
+
+```bash
+python -m street_photo_collector --limit 30 --per-source 12 --min-score 4
+```
+
+Actions は以下を更新コミットします。
 
 - `output.md`
 - `notebooklm_import.md`
 - `articles.csv`
 - `data/seen.sqlite3`
 
-## AI要約を追加する場合
+## 無料運用と配慮
 
-現状の説明文はAI要約ではなく、記事タイプとキーワードに基づくルールベース生成です。
-
-将来AI要約を追加する場合は、分類・スコアリング後の `Article` を受け取り、`why` と `photography_use` を差し替えるクラスを追加してください。既存の収集、SQLite重複管理、CSV/Markdown出力はそのまま使えます。
+- 有料 API や API キーは使いません。
+- Instagram / X / Facebook のスクレイピングはしません。
+- robots.txt、利用規約、サイト負荷に配慮します。
+- RSS が無い・取得困難なサイトは無理に深追いしません。

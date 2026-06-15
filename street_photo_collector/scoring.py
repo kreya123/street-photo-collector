@@ -95,6 +95,7 @@ def explain_selection(article: Article, article_type_config: dict[str, object]) 
     type_data = dict(article_type_config["types"]).get(article.article_type, {})  # type: ignore[index]
     article.why = str(type_data.get("selection_reason", "This matched the configured street-photography collection rules."))
     article.photography_use = str(type_data.get("photography_use", "Use it to translate observed work into shooting constraints and editing ideas."))
+    article.photography_use += _keyword_based_use(article.matched_keywords)
 
     if article.genre == "Silent Stories":
         article.photography_use += " Pay special attention to absence, trace, memory, and quiet human presence."
@@ -105,6 +106,22 @@ def explain_selection(article: Article, article_type_config: dict[str, object]) 
     elif article.genre == "Humor or Decisive Moment":
         article.photography_use += " Study timing, gesture, juxtaposition, and the position where the moment becomes legible."
     return article
+
+
+def _keyword_based_use(matched_keywords: list[str]) -> str:
+    keywords = {keyword.lower() for keyword in matched_keywords}
+    notes: list[str] = []
+    if matched_keywords:
+        notes.append(f" Use the matched keywords ({', '.join(matched_keywords)}) as reading prompts when reviewing the article.")
+    if keywords.intersection({"light and shadow", "geometry", "composition", "color", "signage"}):
+        notes.append(" Translate the matched visual keywords into a concrete shooting constraint such as light/shadow, geometry, color, composition, or signage.")
+    if keywords.intersection({"candid", "everyday life", "human presence", "public space"}):
+        notes.append(" Watch how ordinary public-space behavior creates structure before chasing dramatic moments.")
+    if keywords.intersection({"absence", "trace", "memory", "silent story", "silent stories"}):
+        notes.append(" Look for what remains after people leave: traces, absences, memory, and quiet evidence of use.")
+    if keywords.intersection({"decisive moment", "humor", "humour", "gesture", "juxtaposition"}):
+        notes.append(" Revisit the frame for timing, gesture, and juxtaposition rather than treating the first shot as final.")
+    return "".join(notes)
 
 
 def _contains_any(text: str, keywords: set[str] | list[str]) -> bool:

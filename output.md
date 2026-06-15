@@ -1,6 +1,6 @@
 # Overseas Street Photography Watchlist
 
-Generated: 2026-06-15T22:47:16
+Generated: 2026-06-15T22:52:09
 
 Focus: photographers, projects, exhibitions, photobooks, and award results.
 Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humor or Decisive Moment > Candid > Street Portrait > Street Fashion
@@ -18,7 +18,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 2. Pia Paulina Guilmoth & Jesse Bull Saffire – Fishworm
 
@@ -33,7 +33,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 3. Joselito Verschaeve – As Long As The Sun Lasts
 
@@ -48,7 +48,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 4. Jeff Mermelstein – What if Jeff were a Butterfly?
 
@@ -63,7 +63,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 5. Siri Kaur – Sistermoon
 
@@ -78,7 +78,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 6. Raymond Thompson Jr – It’s hard to stop rebels that time travel
 
@@ -93,7 +93,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: photo book, publisher
 - Relevance Score: 23.05
 - Why this was selected: Photobook terms suggest a project shaped through editing, sequencing, and publication.
-- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to learn how street photographs can become a book structure rather than isolated single images. Use the matched keywords (photo book, publisher) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 7. Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
 
@@ -108,7 +108,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: awards, memory, project
 - Relevance Score: 22.55
 - Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
-- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Use the matched keywords (awards, memory, project) as reading prompts when reviewing the article. Look for what remains after people leave: traces, absences, memory, and quiet evidence of use. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 8. Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
 
@@ -123,7 +123,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: awards, review
 - Relevance Score: 22.05
 - Why this was selected: Award and result terms suggest externally recognized work worth reviewing for standards and trends.
-- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Pay special attention to absence, trace, memory, and quiet human presence.
+- Why this may be useful for my photography: Use it to compare what juries reward: subject matter, editing, visual risk, and contemporary street-photo language. Use the matched keywords (awards, review) as reading prompts when reviewing the article. Pay special attention to absence, trace, memory, and quiet human presence.
 
 ## 9. “Transcendent Country of the Mind” by Sari Soininen
 
@@ -138,7 +138,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: project
 - Relevance Score: 19.65
 - Why this was selected: The article appears to introduce a coherent project, series, or portfolio.
-- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
+- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Use the matched keywords (project) as reading prompts when reviewing the article. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
 
 ## 10. Jan Staller – Manhattan Project
 
@@ -153,7 +153,7 @@ Street genre priority: Silent Stories > Fine Art Street > Urban Landscape > Humo
 - Matched Keywords: city, project, review
 - Relevance Score: 19.65
 - Why this was selected: The article appears to introduce a coherent project, series, or portfolio.
-- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
+- Why this may be useful for my photography: Use it to think in sequences: repeated motifs, pacing, editing, and how individual frames accumulate meaning. Use the matched keywords (city, project, review) as reading prompts when reviewing the article. Note how composition, color, sequencing, and exhibition context raise ordinary street material into a body of work.
 
 ---
 
