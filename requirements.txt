@@ -1,0 +1,2 @@
+# No runtime dependencies are required for the MVP.
+# Optional: install PyYAML if you want to use non-JSON YAML syntax in sources.yaml or genres.yaml.

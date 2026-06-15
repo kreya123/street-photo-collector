@@ -1,0 +1,104 @@
+{
+  "priority_order": [
+    "Silent Stories",
+    "Fine Art Street",
+    "Urban Landscape",
+    "Humor or Decisive Moment",
+    "Candid",
+    "Street Portrait",
+    "Street Fashion"
+  ],
+  "genres": {
+    "Candid": {
+      "keywords": {
+        "candid": 3.0,
+        "unposed": 2.5,
+        "spontaneous": 2.5,
+        "everyday life": 3.0,
+        "daily life": 2.0,
+        "observational": 2.0,
+        "public space": 2.0,
+        "human presence": 2.0
+      }
+    },
+    "Street Portrait": {
+      "keywords": {
+        "portrait": 3.0,
+        "portraits": 3.0,
+        "identity": 2.0,
+        "community": 1.5,
+        "face": 1.5,
+        "expression": 1.5,
+        "encounter": 1.5
+      }
+    },
+    "Street Fashion": {
+      "keywords": {
+        "street style": 3.0,
+        "fashion": 2.5,
+        "style": 2.0,
+        "clothing": 2.0,
+        "outfit": 2.0,
+        "color": 1.5
+      }
+    },
+    "Fine Art Street": {
+      "keywords": {
+        "fine art": 3.0,
+        "gallery": 2.0,
+        "museum": 2.0,
+        "exhibition": 2.0,
+        "monograph": 2.0,
+        "composition": 2.0,
+        "color": 1.8,
+        "light and shadow": 3.0,
+        "geometry": 2.0,
+        "series": 1.5,
+        "project": 1.5
+      }
+    },
+    "Urban Landscape": {
+      "keywords": {
+        "urban landscape": 3.0,
+        "urban": 2.5,
+        "landscape": 2.5,
+        "city": 1.5,
+        "architecture": 2.0,
+        "public space": 3.0,
+        "geometry": 3.0,
+        "signage": 3.0,
+        "street scene": 2.0,
+        "human presence": 2.0
+      }
+    },
+    "Humor or Decisive Moment": {
+      "keywords": {
+        "humor": 3.0,
+        "humour": 3.0,
+        "decisive moment": 3.0,
+        "gesture": 2.0,
+        "juxtaposition": 2.0,
+        "irony": 2.0,
+        "surreal": 1.8,
+        "timing": 2.0,
+        "coincidence": 2.0
+      }
+    },
+    "Silent Stories": {
+      "keywords": {
+        "silent story": 3.0,
+        "silent stories": 3.0,
+        "quiet": 2.5,
+        "absence": 3.0,
+        "trace": 3.0,
+        "memory": 3.0,
+        "solitude": 2.5,
+        "isolation": 2.0,
+        "everyday life": 3.0,
+        "human presence": 3.0,
+        "poetic": 2.0,
+        "narrative": 2.0
+      }
+    }
+  }
+}

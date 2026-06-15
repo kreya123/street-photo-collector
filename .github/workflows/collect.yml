@@ -1,0 +1,31 @@
+name: Collect street photography links
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Sun/Wed 22:00 UTC = Mon/Thu 07:00 JST.
+    - cron: "0 22 * * 0,3"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run collector
+        run: python -m street_photo_collector --limit 30 --per-source 12 --min-score 4
+
+      - name: Commit updated output
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update street photography watchlist"
+          file_pattern: output.md notebooklm_import.md articles.csv data/seen.sqlite3

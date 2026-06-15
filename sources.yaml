@@ -1,0 +1,222 @@
+[
+  {
+    "name": "LensCulture",
+    "url": "https://www.lensculture.com/photo-competitions/street-photography-awards",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 4.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photo", "street", "award", "winner", "finalist", "portfolio", "series", "project", "interview", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "shop", "cart", "login", "signup"]
+  },
+  {
+    "name": "The Independent Photographer",
+    "url": "https://independent-photo.com/",
+    "type": "auto",
+    "rss_url": "https://independent-photo.com/feed/",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photo", "street", "award", "winner", "finalist", "portfolio", "series", "project", "interview", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "submit", "cart", "checkout"]
+  },
+  {
+    "name": "Street Photography Magazine",
+    "url": "https://streetphotographymagazine.com/",
+    "type": "rss",
+    "rss_url": "https://streetphotographymagazine.com/feed/",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["street", "photography", "interview", "profile", "feature", "portfolio", "series", "project", "stories"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "shop", "cart", "account"]
+  },
+  {
+    "name": "Magnum Photos",
+    "url": "https://www.magnumphotos.com/",
+    "type": "auto",
+    "rss_url": "https://www.magnumphotos.com/feed/",
+    "source_score": 4.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "stories", "theory-and-practice", "arts-culture", "photobooks", "exhibition", "magnum"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "shop", "prints", "cart", "licensing", "gear"]
+  },
+  {
+    "name": "British Journal of Photography / 1854",
+    "url": "https://www.1854.photography/",
+    "type": "auto",
+    "rss_url": "https://www.1854.photography/feed/",
+    "source_score": 4.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "interview", "profile", "series", "project", "exhibition", "book", "award", "winner"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "jobs", "subscribe", "membership"]
+  },
+  {
+    "name": "Aperture",
+    "url": "https://aperture.org/",
+    "type": "auto",
+    "rss_url": "https://aperture.org/feed/",
+    "source_score": 4.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "magazine", "books", "exhibition", "interview", "portfolio", "series"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "shop", "cart", "donate"]
+  },
+  {
+    "name": "PhMuseum",
+    "url": "https://phmuseum.com/news",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "project", "open-call", "grant", "award", "exhibition", "interview"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "login", "signup"]
+  },
+  {
+    "name": "Huck",
+    "url": "https://www.huckmag.com/",
+    "type": "auto",
+    "rss_url": "https://www.huckmag.com/feed/",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "photo", "portfolio", "series", "project", "interview", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "fashion", "music"]
+  },
+  {
+    "name": "It's Nice That",
+    "url": "https://www.itsnicethat.com/photography",
+    "type": "auto",
+    "rss_url": "https://www.itsnicethat.com/rss",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "photo", "portfolio", "series", "project", "interview", "book", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "advertising", "animation"]
+  },
+  {
+    "name": "The Photographers' Gallery",
+    "url": "https://thephotographersgallery.org.uk/whats-on",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "exhibition", "gallery", "show", "artist", "book"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "visit", "tickets", "shop", "cart"]
+  },
+  {
+    "name": "Foam",
+    "url": "https://www.foam.org/events",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "exhibition", "museum", "artist", "award", "talent"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "tickets", "shop", "cart"]
+  },
+  {
+    "name": "F-Stop Magazine",
+    "url": "https://www.fstopmagazine.com/",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 2.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "portfolio", "series", "project", "issue"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com"]
+  },
+  {
+    "name": "Burn Magazine",
+    "url": "https://www.burnmagazine.org/",
+    "type": "auto",
+    "rss_url": "https://www.burnmagazine.org/feed/",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "essay", "story", "project", "interview", "burn"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "workshop"]
+  },
+  {
+    "name": "Lenscratch",
+    "url": "https://lenscratch.com/",
+    "type": "auto",
+    "rss_url": "https://lenscratch.com/feed/",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "photographer", "interview", "project", "series", "exhibition", "book", "lenscratch"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "submit"]
+  },
+  {
+    "name": "Photobook Journal",
+    "url": "https://photobookjournal.com/",
+    "type": "auto",
+    "rss_url": "https://photobookjournal.com/feed/",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photobook", "photo-book", "book", "monograph", "zine", "publisher", "photography"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com"]
+  },
+  {
+    "name": "MACK",
+    "url": "https://mackbooks.co.uk/",
+    "type": "auto",
+    "rss_url": "https://mackbooks.co.uk/blogs/news.atom",
+    "source_score": 3.5,
+    "same_domain_only": true,
+    "include_url_patterns": ["photobook", "book", "monograph", "artist", "photographer", "launch", "publisher", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "cart", "checkout"]
+  },
+  {
+    "name": "VOID",
+    "url": "https://void.photo/",
+    "type": "auto",
+    "rss_url": "https://void.photo/blogs/news.atom",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photobook", "book", "zine", "artist", "photographer", "launch", "publisher", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "cart", "checkout"]
+  },
+  {
+    "name": "Loose Joints",
+    "url": "https://loosejoints.biz/",
+    "type": "auto",
+    "rss_url": "https://loosejoints.biz/blogs/news.atom",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photobook", "book", "zine", "artist", "photographer", "launch", "publisher", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "cart", "checkout"]
+  },
+  {
+    "name": "Setanta Books",
+    "url": "https://www.setantabooks.com/",
+    "type": "auto",
+    "rss_url": "https://www.setantabooks.com/blogs/news.atom",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photobook", "book", "zine", "artist", "photographer", "launch", "publisher", "exhibition"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "cart", "checkout"]
+  },
+  {
+    "name": "Paris Photo",
+    "url": "https://www.parisphoto.com/en-gb/news.html",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "gallery", "artist", "exhibition", "book", "award", "fair"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "tickets", "travel"]
+  },
+  {
+    "name": "Photo London",
+    "url": "https://photolondon.org/news/",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 3.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["photography", "gallery", "artist", "exhibition", "book", "award", "fair"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "tickets", "travel"]
+  },
+  {
+    "name": "World Street Photo Awards",
+    "url": "http://www.world-street.photography/",
+    "type": "html",
+    "rss_url": "",
+    "source_score": 4.0,
+    "same_domain_only": true,
+    "include_url_patterns": ["street", "photography", "award", "winner", "finalist", "shortlist"],
+    "exclude_url_patterns": ["instagram.com", "facebook.com", "x.com", "twitter.com", "login", "cart", "checkout"]
+  }
+]
