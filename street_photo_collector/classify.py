@@ -63,10 +63,19 @@ class ArticleClassifier:
     def _detect_article_type(self, text: str) -> tuple[str, list[str]]:
         scores: dict[str, int] = {}
         matches_by_type: dict[str, list[str]] = {}
+        title_text = text.split("\n", 1)[0]
         for type_name, type_data in self.article_types.items():
-            matches = [str(keyword) for keyword in type_data.get("keywords", []) if _contains_keyword(text, str(keyword))]  # type: ignore[union-attr]
+            matches = []
+            for keyword in type_data.get("keywords", []):  # type: ignore[union-attr]
+                keyword_text = str(keyword)
+                if _contains_keyword(title_text, keyword_text):
+                    scores[type_name] = scores.get(type_name, 0) + 3
+                    matches.append(keyword_text)
+                elif _contains_keyword(text, keyword_text):
+                    scores[type_name] = scores.get(type_name, 0) + 1
+                    matches.append(keyword_text)
             matches_by_type[type_name] = matches
-            scores[type_name] = len(matches)
+            scores[type_name] = scores.get(type_name, 0)
 
         if max(scores.values() or [0]) == 0:
             return "Other", []
@@ -99,6 +108,11 @@ class ArticleClassifier:
 
     def _detect_photographer_name(self, article: Article) -> str:
         title = article.title
+        dash_name = _split_dash_title(title)[0]
+        if dash_name:
+            name = _clean_name(dash_name)
+            if name:
+                return name
         patterns = [
             r":\s+([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+){1,3})\s+(?:on|On)\b",
             r"^([A-Z][A-Za-z'’.-]+(?:\s+(?:&|and)?\s*[A-Z][A-Za-z'’.-]+){1,6})\s+[–-]\s+",
@@ -108,7 +122,7 @@ class ArticleClassifier:
             r"\bprofile[:\s]+([A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+){1,3})",
         ]
         for pattern in patterns:
-            match = re.search(pattern, title)
+            match = re.search(pattern, title, flags=re.IGNORECASE)
             if match:
                 name = _clean_name(match.group(1))
                 if name:
@@ -129,17 +143,17 @@ class ArticleClassifier:
 
         on_match = re.search(r":\s+[A-Z][A-Za-z'’.-]+(?:\s+[A-Z][A-Za-z'’.-]+){1,3}\s+(?:on|On)\s+(.{3,80})$", title)
         if on_match and not _looks_like_generic_label(on_match.group(1)):
-            return clean_text(on_match.group(1), 120)
+            return _clean_project_name(on_match.group(1))
 
-        dash_match = re.search(r"^[^-–]+[–-]\s+(.{3,80})$", title)
-        if dash_match and not _looks_like_generic_label(dash_match.group(1)):
-            return clean_text(dash_match.group(1), 120)
+        dash_project = _split_dash_title(title)[1]
+        if dash_project and not _looks_like_generic_label(dash_project):
+            return _clean_project_name(dash_project)
 
         if ":" in title:
             before, after = [part.strip() for part in title.split(":", 1)]
             candidate = after if len(after) <= 80 else before
             if candidate and not _looks_like_generic_label(candidate):
-                return clean_text(candidate, 120)
+                return _clean_project_name(candidate)
 
         return "Unknown"
 
@@ -157,10 +171,25 @@ def _contains_keyword(text: str, keyword: str) -> bool:
 
 def _clean_name(value: str) -> str:
     name = clean_text(value, 80).strip(" -:|")
+    name = re.sub(r"^(by|with)\s+", "", name, flags=re.IGNORECASE).strip()
     name = re.sub(r"\b(published|updated|news|opinion|feature|interview)\b.*$", "", name, flags=re.IGNORECASE).strip()
     if not name or name in NAME_STOPWORDS or len(name.split()) < 2:
         return ""
     return name
+
+
+def _clean_project_name(value: str) -> str:
+    project = clean_text(value, 120).strip(" -:|")
+    project = re.sub(r"\s+\bby\s+[A-Z][^\d,;:|]{2,80}$", "", project, flags=re.IGNORECASE).strip()
+    return project or "Unknown"
+
+
+def _split_dash_title(title: str) -> tuple[str, str]:
+    for separator in (" – ", " - "):
+        if separator in title:
+            before, after = title.split(separator, 1)
+            return before.strip(), after.strip()
+    return "", ""
 
 
 def _looks_like_generic_label(value: str) -> bool:
