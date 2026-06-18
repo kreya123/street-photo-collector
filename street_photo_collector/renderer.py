@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 from pathlib import Path
 
-from .models import Article
+from .models import Article, SelectionStats
 
 
 HEADER = [
@@ -48,14 +48,15 @@ def render_all_outputs(
     output_path: str | Path,
     notebooklm_path: str | Path,
     csv_path: str | Path,
+    stats: SelectionStats,
     errors: list[str] | None = None,
 ) -> None:
-    render_markdown(articles, output_path, errors)
-    render_notebooklm_import(articles, notebooklm_path, errors)
+    render_markdown(articles, output_path, stats, errors)
+    render_notebooklm_import(articles, notebooklm_path, stats, errors)
     render_csv(articles, csv_path)
 
 
-def render_markdown(articles: list[Article], output_path: str | Path, errors: list[str] | None = None) -> None:
+def render_markdown(articles: list[Article], output_path: str | Path, stats: SelectionStats, errors: list[str] | None = None) -> None:
     path = Path(output_path)
     _ensure_parent(path)
 
@@ -66,6 +67,15 @@ def render_markdown(articles: list[Article], output_path: str | Path, errors: li
         "",
         "対象: 作家、作品プロジェクト、展示、写真集、受賞・コンテスト結果に紐づく記事。",
         "ジャンル優先度: 静かな物語 > ファインアート・ストリート > 都市風景 > ユーモア/決定的瞬間 > キャンディッド > ストリートポートレート > ストリートファッション",
+        "",
+        "## 今回の選抜条件",
+        "",
+        f"- 候補取得件数: {stats.candidate_count}",
+        f"- 品質フィルタ通過件数: {stats.quality_pass_count}",
+        f"- 最終出力件数: {stats.final_count}",
+        f"- 最小スコア: {stats.min_score:g}",
+        f"- 同一ソース上限: {stats.max_per_source_final}",
+        f"- 同一記事タイプ上限: {stats.max_per_article_type_final}",
         "",
     ]
 
@@ -101,7 +111,7 @@ def render_markdown(articles: list[Article], output_path: str | Path, errors: li
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def render_notebooklm_import(articles: list[Article], output_path: str | Path, errors: list[str] | None = None) -> None:
+def render_notebooklm_import(articles: list[Article], output_path: str | Path, stats: SelectionStats, errors: list[str] | None = None) -> None:
     path = Path(output_path)
     _ensure_parent(path)
 
@@ -111,6 +121,13 @@ def render_notebooklm_import(articles: list[Article], output_path: str | Path, e
         f"生成日時: {datetime.now().isoformat(timespec='seconds')}",
         "",
         "このファイルはリサーチ用インポートを想定しています。作家、作品群、展示、写真集、コンテスト結果に紐づく記事を優先しています。",
+        "",
+        f"候補取得件数: {stats.candidate_count}",
+        f"品質フィルタ通過件数: {stats.quality_pass_count}",
+        f"最終出力件数: {stats.final_count}",
+        f"最小スコア: {stats.min_score:g}",
+        f"同一ソース上限: {stats.max_per_source_final}",
+        f"同一記事タイプ上限: {stats.max_per_article_type_final}",
         "",
     ]
 
@@ -168,6 +185,10 @@ def render_csv(articles: list[Article], output_path: str | Path) -> None:
                     article.photography_use,
                 ]
             )
+
+
+def render_candidates_csv(articles: list[Article], output_path: str | Path) -> None:
+    render_csv(articles, output_path)
 
 
 def _format_keywords(article: Article) -> str:

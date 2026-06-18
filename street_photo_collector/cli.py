@@ -7,8 +7,9 @@ from .classify import ArticleClassifier
 from .config import load_article_types, load_genres, load_sources
 from .db import SeenDatabase
 from .fetchers import fetch_source
-from .renderer import render_all_outputs
+from .renderer import render_all_outputs, render_candidates_csv
 from .scoring import ArticleScorer, explain_selection
+from .selector import select_articles
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -20,9 +21,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", default="output.md", help="Path to output markdown")
     parser.add_argument("--notebooklm-output", default="notebooklm_import.md", help="Path to NotebookLM import markdown")
     parser.add_argument("--csv-output", default="articles.csv", help="Path to CSV output")
-    parser.add_argument("--limit", type=int, default=20, help="Number of top articles to output")
+    parser.add_argument("--candidate-limit", type=int, default=60, help="Maximum number of scored candidate articles to keep before final selection")
+    parser.add_argument("--limit", type=int, default=10, help="Number of final selected articles to output")
     parser.add_argument("--per-source", type=int, default=15, help="Maximum items to fetch from each source")
-    parser.add_argument("--min-score", type=float, default=4.0, help="Minimum relevance score for output")
+    parser.add_argument("--min-score", type=float, default=12.0, help="Minimum relevance score for final quality filtering")
+    parser.add_argument("--max-per-source-final", type=int, default=2, help="Maximum final articles from the same source")
+    parser.add_argument("--max-per-article-type-final", type=int, default=4, help="Maximum final articles with the same article type")
+    parser.add_argument("--candidates-output", default="outputs/candidates.csv", help="Path to debug CSV containing candidate articles")
     parser.add_argument("--include-seen", action="store_true", help="Include URLs already stored in SQLite")
     return parser
 
@@ -50,15 +55,30 @@ def main(argv: list[str] | None = None) -> int:
                 classifier.classify(article)
                 scorer.score(article, source_score=source_score)
                 explain_selection(article, article_type_config)
-                if article.relevance_score >= args.min_score:
-                    collected.append(article)
+                collected.append(article)
                 db.mark_seen(article)
 
         db.commit()
 
-    top_articles = sorted(collected, key=lambda item: item.relevance_score, reverse=True)[: args.limit]
-    render_all_outputs(top_articles, Path(args.output), Path(args.notebooklm_output), Path(args.csv_output), errors)
-    print(f"Wrote {len(top_articles)} articles to {args.output}, {args.notebooklm_output}, and {args.csv_output}")
+    selection = select_articles(
+        collected,
+        candidate_limit=args.candidate_limit,
+        final_limit=args.limit,
+        min_score=args.min_score,
+        max_per_source_final=args.max_per_source_final,
+        max_per_article_type_final=args.max_per_article_type_final,
+    )
+    render_all_outputs(
+        selection.final_articles,
+        Path(args.output),
+        Path(args.notebooklm_output),
+        Path(args.csv_output),
+        selection.stats,
+        errors,
+    )
+    render_candidates_csv(selection.candidates, Path(args.candidates_output))
+    print(f"Wrote {len(selection.final_articles)} final articles to {args.output}, {args.notebooklm_output}, and {args.csv_output}")
+    print(f"Wrote {len(selection.candidates)} candidate articles to {args.candidates_output}")
     if errors:
         print(f"Completed with {len(errors)} fetch note(s).")
     return 0

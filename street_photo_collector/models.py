@@ -21,3 +21,13 @@ class Article:
     relevance_score: float = 0.0
     why: str = ""
     photography_use: str = ""
+
+
+@dataclass(slots=True)
+class SelectionStats:
+    candidate_count: int = 0
+    quality_pass_count: int = 0
+    final_count: int = 0
+    min_score: float = 0.0
+    max_per_source_final: int = 0
+    max_per_article_type_final: int = 0

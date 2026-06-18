@@ -10,6 +10,68 @@ EXHIBITION_KEYWORDS = {"exhibition", "gallery", "museum", "solo show", "group sh
 PHOTOBOOK_KEYWORDS = {"photobook", "photo book", "monograph", "zine", "book launch"}
 AWARD_KEYWORDS = {"award", "awards", "winner", "winners", "finalist", "finalists", "shortlist", "contest results", "competition results"}
 FEATURE_KEYWORDS = {"interview", "profile", "feature", "portfolio", "series", "project"}
+STREET_CONTEXT_KEYWORDS = {
+    "street photography",
+    "documentary",
+    "photobook",
+    "photo book",
+    "exhibition",
+    "award",
+    "photographer",
+    "portfolio",
+    "series",
+    "project",
+    "candid",
+    "urban",
+    "public space",
+    "human presence",
+    "trace",
+    "memory",
+    "light and shadow",
+    "decisive moment",
+    "composition",
+    "color",
+}
+LOW_QUALITY_PAGE_KEYWORDS = {
+    "our whole catalogue",
+    "whole catalogue",
+    "photography books",
+    "all books",
+    "store",
+    "shop",
+    "catalogue",
+    "catalog",
+    "cart",
+    "checkout",
+    "collections",
+    "products",
+    "home",
+    "tickets now available",
+    "nicer tuesdays",
+    "event tickets",
+}
+NON_PHOTO_SUBJECT_KEYWORDS = {
+    "illustration",
+    "graphic design",
+    "ai image",
+    "ai-generated",
+    "generative ai",
+    "smartphone",
+    "software update",
+    "firmware",
+    "app update",
+}
+INVALID_NAME_PHRASES = {
+    "photography books",
+    "our whole catalogue",
+    "night juxtaposition",
+    "the axe will",
+    "magnum book club",
+    "nicer tuesdays",
+    "july’s nicer tuesdays",
+    "street photography",
+    "world street",
+}
 
 
 class ArticleScorer:
@@ -31,8 +93,12 @@ class ArticleScorer:
 
         if article.photographer_name != "Unknown":
             score += self.rules.get("named_photographer", 5)
+        else:
+            score -= 6
         if article.project_name != "Unknown":
             score += self.rules.get("named_project", 5)
+        else:
+            score -= 4
         if article.article_type == "Exhibition" or _contains_any(text, EXHIBITION_KEYWORDS):
             score += self.rules.get("exhibition", 4)
         if article.article_type == "Photobook" or _contains_any(text, PHOTOBOOK_KEYWORDS):
@@ -44,12 +110,23 @@ class ArticleScorer:
         if _contains_any(text, self.street_visual_keywords):
             score += self.rules.get("street_visual_language", 3)
 
+        if is_low_quality_page(article):
+            score -= 10
+        if not is_valid_photographer_name(article.photographer_name):
+            score -= 6
+        if not article.published_at:
+            score -= 2
+        if not _contains_any(text, STREET_CONTEXT_KEYWORDS):
+            score -= 6
+
         if _contains_negative(text, self.negative_keywords.get("gear_or_commerce", [])):
             score += self.rules.get("gear_or_commerce", -8)
         if _contains_negative(text, self.negative_keywords.get("tips_or_beginner", [])):
             score += self.rules.get("tips_or_beginner", -5)
         if _contains_negative(text, self.negative_keywords.get("ai_phone_software", [])):
             score += self.rules.get("ai_phone_software", -5)
+        if _contains_any(text, NON_PHOTO_SUBJECT_KEYWORDS):
+            score -= 6
         if not self.has_strong_relationship(article):
             score += self.rules.get("weak_title_relationship", -3)
 
@@ -140,3 +217,33 @@ def _contains_negative(text: str, keywords: list[str]) -> bool:
         if lowered in text:
             return True
     return False
+
+
+def is_low_quality_page(article: Article) -> bool:
+    title = article.title.lower().strip()
+    url_path = re.sub(r"/+", "/", re.sub(r"https?://[^/]+", "", article.url.lower())).strip("/")
+    if not url_path:
+        return True
+    if title in LOW_QUALITY_PAGE_KEYWORDS or any(keyword in title for keyword in LOW_QUALITY_PAGE_KEYWORDS):
+        return True
+    path_parts = [part for part in url_path.split("/") if part]
+    if len(path_parts) == 1 and path_parts[0] in LOW_QUALITY_PAGE_KEYWORDS:
+        return True
+    if any(part in LOW_QUALITY_PAGE_KEYWORDS for part in path_parts):
+        return True
+    return False
+
+
+def is_valid_photographer_name(name: str) -> bool:
+    if not name or name == "Unknown":
+        return False
+    normalized = name.lower().strip()
+    if normalized in INVALID_NAME_PHRASES:
+        return False
+    if any(phrase in normalized for phrase in INVALID_NAME_PHRASES):
+        return False
+    words = [word for word in re.split(r"\s+|&|and", name) if word]
+    if len(words) < 2:
+        return False
+    capitalized_words = [word for word in words if re.match(r"^[A-ZÀ-ÖØ-Þ]", word)]
+    return len(capitalized_words) >= 2

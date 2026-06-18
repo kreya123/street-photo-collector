@@ -22,10 +22,10 @@ jobs:
           python-version: "3.12"
 
       - name: Run collector
-        run: python -m street_photo_collector --limit 30 --per-source 12 --min-score 4
+        run: python -m street_photo_collector --candidate-limit 60 --limit 10 --per-source 8 --min-score 12 --max-per-source-final 2 --max-per-article-type-final 4
 
       - name: Commit updated output
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update street photography watchlist"
-          file_pattern: output.md notebooklm_import.md articles.csv data/seen.sqlite3
+          file_pattern: output.md notebooklm_import.md articles.csv outputs/candidates.csv data/seen.sqlite3

@@ -1,9 +1,18 @@
 # 海外ストリート写真ウォッチリスト
 
-生成日時: 2026-06-18T22:08:35
+生成日時: 2026-06-18T22:38:37
 
 対象: 作家、作品プロジェクト、展示、写真集、受賞・コンテスト結果に紐づく記事。
 ジャンル優先度: 静かな物語 > ファインアート・ストリート > 都市風景 > ユーモア/決定的瞬間 > キャンディッド > ストリートポートレート > ストリートファッション
+
+## 今回の選抜条件
+
+- 候補取得件数: 60
+- 品質フィルタ通過件数: 16
+- 最終出力件数: 10
+- 最小スコア: 12
+- 同一ソース上限: 2
+- 同一記事タイプ上限: 4
 
 ## 1. Claudia Andujar – Genocídio do Yanomami
 
@@ -16,7 +25,7 @@
 - 作品・シリーズ・写真集・展示名: Genocídio do Yanomami
 - 判定ストリートジャンル: 静かな物語 (Silent Stories)
 - 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
+- 関連度スコア: 21.05
 - 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
 - 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
@@ -31,131 +40,11 @@
 - 作品・シリーズ・写真集・展示名: Fishworm
 - 判定ストリートジャンル: 静かな物語 (Silent Stories)
 - 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
+- 関連度スコア: 21.05
 - 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
 - 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 3. Joselito Verschaeve – As Long As The Sun Lasts
-
-- タイトル: Joselito Verschaeve – As Long As The Sun Lasts
-- ソース: VOID
-- URL: https://void.photo/as-long-as-the-sun-lasts
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Joselito Verschaeve
-- 作品・シリーズ・写真集・展示名: As Long As The Sun Lasts
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 4. Jeff Mermelstein – What if Jeff were a Butterfly?
-
-- タイトル: Jeff Mermelstein – What if Jeff were a Butterfly?
-- ソース: VOID
-- URL: https://void.photo/what-if-jeff-were-a-butterfly
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Jeff Mermelstein
-- 作品・シリーズ・写真集・展示名: What if Jeff were a Butterfly?
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 5. Siri Kaur – Sistermoon
-
-- タイトル: Siri Kaur – Sistermoon
-- ソース: VOID
-- URL: https://void.photo/sistermoon
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Siri Kaur
-- 作品・シリーズ・写真集・展示名: Sistermoon
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 6. Raymond Thompson Jr – It’s hard to stop rebels that time travel
-
-- タイトル: Raymond Thompson Jr – It’s hard to stop rebels that time travel
-- ソース: VOID
-- URL: https://void.photo/its-hard-to-stop-rebels-that-time-travel
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Raymond Thompson Jr
-- 作品・シリーズ・写真集・展示名: It’s hard to stop rebels that time travel
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 7. JH Engström – Dimma Brume Mist
-
-- タイトル: JH Engström – Dimma Brume Mist
-- ソース: VOID
-- URL: https://void.photo/dimma-brume-mist
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: JH Engström
-- 作品・シリーズ・写真集・展示名: Dimma Brume Mist
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 8. Tehching Hsieh – One Year Performance 1978–1979
-
-- タイトル: Tehching Hsieh – One Year Performance 1978–1979
-- ソース: VOID
-- URL: https://void.photo/one-year-performance-1978-1979
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Tehching Hsieh
-- 作品・シリーズ・写真集・展示名: One Year Performance 1978–1979
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 9. Yorgos Lanthimos – Dear God, the Parthenon is still broken
-
-- タイトル: Yorgos Lanthimos – Dear God, the Parthenon is still broken
-- ソース: VOID
-- URL: https://void.photo/dear-god-the-parthenon-is-still-broken
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Yorgos Lanthimos
-- 作品・シリーズ・写真集・展示名: Dear God, the Parthenon is still broken
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 10. András Ladocsi – There is a big river...
-
-- タイトル: András Ladocsi – There is a big river...
-- ソース: VOID
-- URL: https://void.photo/there-is-a-big-river
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: András Ladocsi
-- 作品・シリーズ・写真集・展示名: There is a big river...
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 23.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 11. Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
+## 3. Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
 
 - タイトル: Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
 - ソース: PhMuseum
@@ -166,11 +55,11 @@
 - 作品・シリーズ・写真集・展示名: Ukranian Collective Memory
 - 判定ストリートジャンル: 静かな物語 (Silent Stories)
 - 一致キーワード: awards, memory, project
-- 関連度スコア: 22.55
+- 関連度スコア: 20.55
 - 選んだ理由: 受賞、ファイナリスト、ショートリストなどの語があり、外部評価を受けた作品を確認できる記事です。
 - 自分の撮影に役立ちそうな点: 審査で評価される主題、編集、視覚的な挑戦、現代のストリート写真表現を比較する材料になります。 一致キーワード（awards, memory, project）を、記事を読むときの観察メモとして使えます。 人が去った後に残る痕跡、不在、記憶、使われた気配を探す視点に転用できます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 12. Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
+## 4. Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
 
 - タイトル: Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
 - ソース: PhMuseum
@@ -181,41 +70,11 @@
 - 作品・シリーズ・写真集・展示名: From The Fields Of Europe
 - 判定ストリートジャンル: 静かな物語 (Silent Stories)
 - 一致キーワード: photobook, review
-- 関連度スコア: 22.05
+- 関連度スコア: 20.05
 - 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
 - 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photobook, review）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 13. Photobook Review: Water Over Thunder By Larry Sultan
-
-- タイトル: Photobook Review: Water Over Thunder By Larry Sultan
-- ソース: PhMuseum
-- URL: https://phmuseum.com/news/photobook-review-water-over-thunder-by-larry-sultan
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Larry Sultan
-- 作品・シリーズ・写真集・展示名: Water Over Thunder
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photobook, review
-- 関連度スコア: 22.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photobook, review）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 14. Tractor Beam is a “soilpunk” sci-fi magazine with psychedelic design that teleports you to another world
-
-- タイトル: Tractor Beam is a “soilpunk” sci-fi magazine with psychedelic design that teleports you to another world
-- ソース: It's Nice That
-- URL: https://www.itsnicethat.com/articles/claire-gustavson-lana-z-porter-tractor-beam-illustration-publication-project-160626
-- 日付: 2026-06-16T08:00:00+00:00
-- 記事タイプ: ポートフォリオ/シリーズ (Portfolio or Series)
-- 作家名: psychedelic design that teleports
-- 作品・シリーズ・写真集・展示名: soilpunk
-- 判定ストリートジャンル: ファインアート・ストリート (Fine Art Street)
-- 一致キーワード: project
-- 関連度スコア: 19.65
-- 選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
-- 自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（project）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
-
-## 15. “Transcendent Country of the Mind” by Sari Soininen
+## 5. “Transcendent Country of the Mind” by Sari Soininen
 
 - タイトル: “Transcendent Country of the Mind” by Sari Soininen
 - ソース: Burn Magazine
@@ -230,22 +89,7 @@
 - 選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
 - 自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（project）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
 
-## 16. “Mezen: By Sky’s Edge” by Emil Gataullin
-
-- タイトル: “Mezen: By Sky’s Edge” by Emil Gataullin
-- ソース: Burn Magazine
-- URL: https://www.burnmagazine.org/essays/2022/12/mezen-by-skys-edge-by-emil-gataullin/
-- 日付: 2022-12-08
-- 記事タイプ: ポートフォリオ/シリーズ (Portfolio or Series)
-- 作家名: Sky’s Edge
-- 作品・シリーズ・写真集・展示名: Mezen: By Sky’s Edge
-- 判定ストリートジャンル: ファインアート・ストリート (Fine Art Street)
-- 一致キーワード: project
-- 関連度スコア: 19.65
-- 選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
-- 自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（project）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
-
-## 17. Jan Staller – Manhattan Project
+## 6. Jan Staller – Manhattan Project
 
 - タイトル: Jan Staller – Manhattan Project
 - ソース: Photobook Journal
@@ -260,52 +104,7 @@
 - 選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
 - 自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（city, project, review）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
 
-## 18. Magnum Book Club: America in Crisis
-
-- タイトル: Magnum Book Club: America in Crisis
-- ソース: Magnum Photos
-- URL: https://www.magnumphotos.com/theory-and-practice/photobooks/magnum-book-club-america-in-crisis/
-- 日付: 2026-05-29
-- 記事タイプ: 作家特集 (Photographer Feature)
-- 作家名: Magnum Book Club
-- 作品・シリーズ・写真集・展示名: America in Crisis
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: practice
-- 関連度スコア: 19.05
-- 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
-- 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（practice）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 19. Artist Talk: KATAYAMA Mari and TAWADA Yuki
-
-- タイトル: Artist Talk: KATAYAMA Mari and TAWADA Yuki
-- ソース: The Photographers' Gallery
-- URL: https://thephotographersgallery.org.uk/whats-on/artist-talk-katayama-mari-and-tawada-yuki
-- 日付: 不明
-- 記事タイプ: 作家特集 (Photographer Feature)
-- 作家名: TAWADA Yuki
-- 作品・シリーズ・写真集・展示名: KATAYAMA Mari and TAWADA Yuki
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: artist
-- 関連度スコア: 19.05
-- 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
-- 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（artist）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 20. Book Launch, Talk & Signing, Matthew Connors: The Axe Will Survive the Master
-
-- タイトル: Book Launch, Talk & Signing, Matthew Connors: The Axe Will Survive the Master
-- ソース: The Photographers' Gallery
-- URL: https://thephotographersgallery.org.uk/whats-on/book-launch-talk-signing-matthew-connors-axe-will-survive-master
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: The Axe Will
-- 作品・シリーズ・写真集・展示名: The Axe Will Survive the Master
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: book launch
-- 関連度スコア: 19.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（book launch）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 21. Huda Abdulmughni – Qeshm Doors
+## 7. Huda Abdulmughni – Qeshm Doors
 
 - タイトル: Huda Abdulmughni – Qeshm Doors
 - ソース: Photobook Journal
@@ -320,22 +119,7 @@
 - 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
 - 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（photographer, review）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 22. Isabelle Cordemans – widow without whiskey bottles
-
-- タイトル: Isabelle Cordemans – widow without whiskey bottles
-- ソース: Photobook Journal
-- URL: https://photobookjournal.com/2026/05/21/isabelle-cordemans-widow-without-whiskey-bottles/
-- 日付: 2026-05-21
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Isabelle Cordemans
-- 作品・シリーズ・写真集・展示名: widow without whiskey bottles
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photobook, publisher, review
-- 関連度スコア: 19.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photobook, publisher, review）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 23. Behind the Image: Werner Bischof and the Devin Tricolor
+## 8. Behind the Image: Werner Bischof and the Devin Tricolor
 
 - タイトル: Behind the Image: Werner Bischof and the Devin Tricolor
 - ソース: Magnum Photos
@@ -350,110 +134,35 @@
 - 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
 - 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（practice）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 24. An Infrastructure Of Care: Beatriz De Souza Lima On Exhibiting At PhMuseum Days
+## 9. Artist Talk: KATAYAMA Mari and TAWADA Yuki
 
-- タイトル: An Infrastructure Of Care: Beatriz De Souza Lima On Exhibiting At PhMuseum Days
-- ソース: PhMuseum
-- URL: https://phmuseum.com/news/beatriz-de-souza-lima-on-exhibiting-at-phmuseum-days
-- 日付: 不明
-- 記事タイプ: 受賞/コンテスト結果 (Award or Contest Result)
-- 作家名: Beatriz De Souza Lima
-- 作品・シリーズ・写真集・展示名: Exhibiting At PhMuseum Days
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: awards
-- 関連度スコア: 18.05
-- 選んだ理由: 受賞、ファイナリスト、ショートリストなどの語があり、外部評価を受けた作品を確認できる記事です。
-- 自分の撮影に役立ちそうな点: 審査で評価される主題、編集、視覚的な挑戦、現代のストリート写真表現を比較する材料になります。 一致キーワード（awards）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 25. Void | Photography Books
-
-- タイトル: Void | Photography Books
-- ソース: VOID
-- URL: https://void.photo/
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Photography Books
-- 作品・シリーズ・写真集・展示名: 不明
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 18.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 26. → Our Whole Catalogue
-
-- タイトル: → Our Whole Catalogue
-- ソース: VOID
-- URL: https://void.photo/store
-- 日付: 不明
-- 記事タイプ: 写真集 (Photobook)
-- 作家名: Our Whole Catalogue
-- 作品・シリーズ・写真集・展示名: 不明
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: photo book, publisher
-- 関連度スコア: 18.05
-- 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
-- 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 27. 13 Photobooks For Spring 2026
-
-- タイトル: 13 Photobooks For Spring 2026
-- ソース: PhMuseum
-- URL: https://phmuseum.com/news/a-spring-guide-to-photobooks
-- 日付: 不明
-- 記事タイプ: 受賞/コンテスト結果 (Award or Contest Result)
-- 作家名: Photobooks For Spring
-- 作品・シリーズ・写真集・展示名: 不明
-- 判定ストリートジャンル: 静かな物語 (Silent Stories)
-- 一致キーワード: awards, guide
-- 関連度スコア: 17.05
-- 選んだ理由: 受賞、ファイナリスト、ショートリストなどの語があり、外部評価を受けた作品を確認できる記事です。
-- 自分の撮影に役立ちそうな点: 審査で評価される主題、編集、視覚的な挑戦、現代のストリート写真表現を比較する材料になります。 一致キーワード（awards, guide）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## 28. Exhibition Tour: Japanese Women Photographers - From 1950s to Now
-
-- タイトル: Exhibition Tour: Japanese Women Photographers - From 1950s to Now
+- タイトル: Artist Talk: KATAYAMA Mari and TAWADA Yuki
 - ソース: The Photographers' Gallery
-- URL: https://thephotographersgallery.org.uk/whats-on/exhibition-tour-japanese-women-photographers-1950s-now
+- URL: https://thephotographersgallery.org.uk/whats-on/artist-talk-katayama-mari-and-tawada-yuki
 - 日付: 不明
-- 記事タイプ: 展示 (Exhibition)
-- 作家名: Exhibition Tour: Japanese Women Photographers
-- 作品・シリーズ・写真集・展示名: From 1950s to Now
-- 判定ストリートジャンル: ファインアート・ストリート (Fine Art Street)
-- 一致キーワード: exhibition
-- 関連度スコア: 15.90
-- 選んだ理由: 展示、ギャラリー、美術館に関する語があり、作品がどのように文脈化されているかを見られる記事です。
-- 自分の撮影に役立ちそうな点: キュレーション、写真の順番、展示サイズ、ストリート写真が空間体験になる方法を学ぶ材料になります。 一致キーワード（exhibition）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
+- 記事タイプ: 作家特集 (Photographer Feature)
+- 作家名: TAWADA Yuki
+- 作品・シリーズ・写真集・展示名: KATAYAMA Mari and TAWADA Yuki
+- 判定ストリートジャンル: 静かな物語 (Silent Stories)
+- 一致キーワード: artist
+- 関連度スコア: 17.05
+- 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
+- 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（artist）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
-## 29. Lily Li uses watercolour paint “like snow” to translate the illusions and struggles of immigration
+## 10. Winner Announced: Nikon Emerging Photographer Award 2026
 
-- タイトル: Lily Li uses watercolour paint “like snow” to translate the illusions and struggles of immigration
-- ソース: It's Nice That
-- URL: https://www.itsnicethat.com/articles/lily-li-northbound-illustration-project-100626
-- 日付: 2026-06-10T08:00:00+00:00
-- 記事タイプ: ポートフォリオ/シリーズ (Portfolio or Series)
-- 作家名: Lily Li
-- 作品・シリーズ・写真集・展示名: like snow
-- 判定ストリートジャンル: ファインアート・ストリート (Fine Art Street)
-- 一致キーワード: project
-- 関連度スコア: 15.65
-- 選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
-- 自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（project）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
-
-## 30. Lenny Gerard: Day vs. Night Juxtaposition
-
-- タイトル: Lenny Gerard: Day vs. Night Juxtaposition
-- ソース: Lenscratch
-- URL: https://lenscratch.com/2026/06/lenny-gerard-day-vs-night-juxtaposition/
-- 日付: 2026-06-18
-- 記事タイプ: インタビュー (Interview)
-- 作家名: Night Juxtaposition
-- 作品・シリーズ・写真集・展示名: Day vs. Night Juxtaposition
-- 判定ストリートジャンル: ユーモア/決定的瞬間 (Humor or Decisive Moment)
-- 一致キーワード: identity, interview, juxtaposition
-- 関連度スコア: 15.60
-- 選んだ理由: インタビュー形式のため、作家本人の考え方や制作プロセスが読める可能性が高い記事です。
-- 自分の撮影に役立ちそうな点: 撮影習慣、よく扱う被写体、街で試せる判断基準を拾う材料になります。 一致キーワード（identity, interview, juxtaposition）を、記事を読むときの観察メモとして使えます。 すぐに撮って終わりにせず、タイミング、身振り、並置が揃う位置を探す練習になります。 タイミング、身振り、並置、瞬間が読み取れる立ち位置を観察すると撮影に活かせます。
+- タイトル: Winner Announced: Nikon Emerging Photographer Award 2026
+- ソース: Photo London
+- URL: https://photolondon.org/winner-announced-photo-london-x-nikon-emerging-photographer-award-2026/
+- 日付: 不明
+- 記事タイプ: 受賞/コンテスト結果 (Award or Contest Result)
+- 作家名: Nikon Emerging Photographer
+- 作品・シリーズ・写真集・展示名: Nikon Emerging Photographer Award 2026
+- 判定ストリートジャンル: 静かな物語 (Silent Stories)
+- 一致キーワード: award, winner
+- 関連度スコア: 13.05
+- 選んだ理由: 受賞、ファイナリスト、ショートリストなどの語があり、外部評価を受けた作品を確認できる記事です。
+- 自分の撮影に役立ちそうな点: 審査で評価される主題、編集、視覚的な挑戦、現代のストリート写真表現を比較する材料になります。 一致キーワード（award, winner）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
 ---
 
