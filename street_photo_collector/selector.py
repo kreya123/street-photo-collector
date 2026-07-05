@@ -60,10 +60,6 @@ def passes_quality_filter(article: Article, min_score: float) -> bool:
         return False
     if is_low_quality_page(article):
         return False
-    if not is_valid_photographer_name(article.photographer_name):
-        return False
-    if article.project_name == "Unknown":
-        return False
     if _weak_context(article):
         return False
     return True

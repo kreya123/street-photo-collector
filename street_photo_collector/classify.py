@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from urllib.parse import urlsplit
 
 from .models import Article
 from .text import clean_text
@@ -45,6 +46,8 @@ class ArticleClassifier:
 
         article.photographer_name = self._detect_photographer_name(article)
         article.project_name = self._detect_project_name(article)
+        if not article.published_at:
+            article.published_at = _detect_date_from_url(article.url)
 
         for keyword in self.article_type_config.get("street_visual_keywords", []):  # type: ignore[union-attr]
             keyword_text = str(keyword)
@@ -215,3 +218,14 @@ def _looks_like_generic_label(value: str) -> bool:
         "beginner",
     ]
     return any(item == lowered or lowered.startswith(item + " ") for item in generic)
+
+
+def _detect_date_from_url(url: str) -> str:
+    path = urlsplit(url).path
+    match = re.search(r"/(20\d{2})/([01]\d)(?:/([0-3]\d))?/", path)
+    if not match:
+        return ""
+    year, month, day = match.groups()
+    if day:
+        return f"{year}-{month}-{day}"
+    return f"{year}-{month}"

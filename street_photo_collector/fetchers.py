@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
+import re
 from typing import Iterable
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
@@ -106,6 +107,7 @@ class ListingParser(HTMLParser):
         self.feed_links: list[str] = []
         self.times: list[str] = []
         self.description = ""
+        self.published_time = ""
         self.page_title = ""
         self._anchor_href = ""
         self._anchor_text: list[str] = []
@@ -124,6 +126,8 @@ class ListingParser(HTMLParser):
             name = attrs_map.get("name", attrs_map.get("property", "")).lower()
             if name in {"description", "og:description", "twitter:description"} and not self.description:
                 self.description = attrs_map.get("content", "")
+            if name in {"og:published_time", "article:published_time"} and not self.published_time:
+                self.published_time = attrs_map.get("content", "")
 
         if tag == "link":
             rel = attrs_map.get("rel", "").lower()
@@ -193,7 +197,7 @@ def parse_html_listing(html: str, source: dict[str, object]) -> list[Article]:
     seen: set[str] = set()
     articles: list[Article] = []
     page_summary = clean_text(parser.description, 700)
-    published_at = _date_text(parser.times[0]) if parser.times else ""
+    published_at = _date_text(parser.published_time or (parser.times[0] if parser.times else ""))
     page_title = parser.page_title or str(source["name"])
 
     articles.append(
@@ -273,6 +277,9 @@ def _rss_link(item: ET.Element) -> str:
 def _date_text(value: str) -> str:
     if not value:
         return ""
+    iso_match = re.match(r"^\s*(20\d{2}-[01]\d-[0-3]\d)", value)
+    if iso_match:
+        return iso_match.group(1)
     try:
         return parsedate_to_datetime(value).date().isoformat()
     except (TypeError, ValueError, IndexError):

@@ -3,8 +3,8 @@ name: Collect street photography links
 on:
   workflow_dispatch:
   schedule:
-    # Sun/Wed 22:00 UTC = Mon/Thu 07:00 JST.
-    - cron: "0 22 * * 0,3"
+    # Sun 22:00 UTC = Mon 07:00 JST.
+    - cron: "0 22 * * 0"
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run collector
-        run: python -m street_photo_collector --candidate-limit 60 --limit 10 --per-source 8 --min-score 12 --max-per-source-final 2 --max-per-article-type-final 4
+        run: python -m street_photo_collector --candidate-limit 90 --limit 8 --per-source 10 --min-score 12 --max-per-source-final 2 --max-per-article-type-final 3
 
       - name: Commit updated output
         uses: stefanzweifel/git-auto-commit-action@v5

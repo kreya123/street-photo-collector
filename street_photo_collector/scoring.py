@@ -91,14 +91,16 @@ class ArticleScorer:
         text = f"{article.title}\n{article.summary}\n{article.url}".lower()
         score = 0.0
 
-        if article.photographer_name != "Unknown":
+        if article.photographer_name == "Unknown":
+            score -= 4
+        elif is_valid_photographer_name(article.photographer_name):
             score += self.rules.get("named_photographer", 5)
         else:
             score -= 6
         if article.project_name != "Unknown":
             score += self.rules.get("named_project", 5)
         else:
-            score -= 4
+            score -= 3
         if article.article_type == "Exhibition" or _contains_any(text, EXHIBITION_KEYWORDS):
             score += self.rules.get("exhibition", 4)
         if article.article_type == "Photobook" or _contains_any(text, PHOTOBOOK_KEYWORDS):
@@ -112,7 +114,7 @@ class ArticleScorer:
 
         if is_low_quality_page(article):
             score -= 10
-        if not is_valid_photographer_name(article.photographer_name):
+        if article.photographer_name != "Unknown" and not is_valid_photographer_name(article.photographer_name):
             score -= 6
         if not article.published_at:
             score -= 2

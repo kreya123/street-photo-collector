@@ -8,7 +8,7 @@ from pathlib import Path
 from street_photo_collector.models import Article, SelectionStats
 from street_photo_collector.renderer import render_all_outputs
 from street_photo_collector.scoring import ArticleScorer, is_low_quality_page
-from street_photo_collector.selector import select_articles
+from street_photo_collector.selector import passes_quality_filter, select_articles
 
 
 def article(
@@ -121,6 +121,20 @@ class SelectionTests(unittest.TestCase):
         item.url = "https://void.photo/store"
 
         self.assertTrue(is_low_quality_page(item))
+
+    def test_unknown_fields_are_penalties_not_hard_exclusions(self) -> None:
+        unknown_artist = article(1, photographer="Unknown", project="Strong Exhibition")
+        unknown_artist.article_type = "Exhibition"
+        unknown_artist.summary = "exhibition photographer documentary public space"
+        unknown_artist.relevance_score = 18
+
+        unknown_project = article(2, photographer="Jane Smith", project="Unknown")
+        unknown_project.article_type = "Interview"
+        unknown_project.summary = "interview photographer documentary public space"
+        unknown_project.relevance_score = 18
+
+        self.assertTrue(passes_quality_filter(unknown_artist, 12))
+        self.assertTrue(passes_quality_filter(unknown_project, 12))
 
 
 if __name__ == "__main__":
