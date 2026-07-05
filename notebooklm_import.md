@@ -1,11 +1,11 @@
 # NotebookLM用インポート: 海外ストリート写真リサーチ
 
-生成日時: 2026-07-05T21:13:06
+生成日時: 2026-07-05T21:28:19
 
 このファイルはリサーチ用インポートを想定しています。作家、作品群、展示、写真集、コンテスト結果に紐づく記事を優先しています。
 
 候補取得件数: 90
-品質フィルタ通過件数: 29
+品質フィルタ通過件数: 28
 最終出力件数: 8
 最小スコア: 12
 同一ソース上限: 2
@@ -42,22 +42,6 @@ URL: https://void.photo/fishworm
 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
 
 自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photo book, publisher）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
-
-## Dispatches From The Front: Sergey Melnitchenko On Ukranian Collective Memory
-
-ソース: PhMuseum
-URL: https://phmuseum.com/news/dispatches-from-the-front-sergey-melnitchenkos-collective-memory-project
-日付: 不明
-記事タイプ: 受賞/コンテスト結果 (Award or Contest Result)
-作家名: Sergey Melnitchenko
-作品・シリーズ・写真集・展示名: Ukranian Collective Memory
-判定ストリートジャンル: 静かな物語 (Silent Stories)
-一致キーワード: awards, memory, project
-関連度スコア: 20.55
-
-選んだ理由: 受賞、ファイナリスト、ショートリストなどの語があり、外部評価を受けた作品を確認できる記事です。
-
-自分の撮影に役立ちそうな点: 審査で評価される主題、編集、視覚的な挑戦、現代のストリート写真表現を比較する材料になります。 一致キーワード（awards, memory, project）を、記事を読むときの観察メモとして使えます。 人が去った後に残る痕跡、不在、記憶、使われた気配を探す視点に転用できます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
 ## Photobook Review: Goalkeepers – From The Fields Of Europe By Hans Van Der Meer
 
@@ -138,6 +122,22 @@ URL: https://www.magnumphotos.com/theory-and-practice/photobooks/magnum-book-clu
 選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
 
 自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（practice）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
+
+## Huda Abdulmughni – Qeshm Doors
+
+ソース: Photobook Journal
+URL: https://photobookjournal.com/2026/06/08/huda-abdulmughni-qeshm-doors/
+日付: 2026-06-08
+記事タイプ: 作家特集 (Photographer Feature)
+作家名: Huda Abdulmughni
+作品・シリーズ・写真集・展示名: Qeshm Doors
+判定ストリートジャンル: 静かな物語 (Silent Stories)
+一致キーワード: photographer, review
+関連度スコア: 19.05
+
+選んだ理由: 一般的な写真ニュースではなく、特定の作家やアーティストの視点・活動に焦点が当たっているため選びました。
+
+自分の撮影に役立ちそうな点: 一人の作家がどのように視点、被写体との距離、反復する関心を作っているかを見る材料になります。 一致キーワード（photographer, review）を、記事を読むときの観察メモとして使えます。 特に、不在、痕跡、記憶、静かな人の気配に注目すると撮影へ転用しやすいです。
 
 ## 取得メモ
 
