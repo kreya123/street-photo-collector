@@ -1,31 +1,47 @@
 # NotebookLM用インポート: 海外ストリート写真リサーチ
 
-生成日時: 2026-08-31T00:00:53
+生成日時: 2026-09-06T23:19:59
 
 このファイルはリサーチ用インポートを想定しています。作家、作品群、展示、写真集、コンテスト結果に紐づく記事を優先しています。
 
-候補取得件数: 21
-品質フィルタ通過件数: 1
-最終出力件数: 1
+候補取得件数: 18
+品質フィルタ通過件数: 2
+最終出力件数: 2
 最小スコア: 12
 同一ソース上限: 2
 同一記事タイプ上限: 3
 
-## Photobook Review: Down By The Hudson By Caleb Stein
+## Paperclip Contour, meet Clippy: Kanon Foundry takes a 1973 typeface and makes it flexible across 15 different styles
 
-ソース: PhMuseum
-URL: https://phmuseum.com/news/photobook-review-down-by-the-hudson-by-caleb-stein
-日付: 不明
-記事タイプ: 写真集 (Photobook)
-作家名: The Hudson By Caleb
-作品・シリーズ・写真集・展示名: Down
+ソース: It's Nice That
+URL: https://www.itsnicethat.com/articles/tor-weibull-kanon-foundry-clippy-graphic-design-project-030926
+日付: 2026-09-03
+記事タイプ: ポートフォリオ/シリーズ (Portfolio or Series)
+作家名: Kanon Foundry
+作品・シリーズ・写真集・展示名: Paperclip Contour, meet Clippy
 判定ストリートジャンル: ファインアート・ストリート (Fine Art Street)
-一致キーワード: photobook, project, review
-関連度スコア: 20.65
+一致キーワード: project
+関連度スコア: 15.65
+
+選んだ理由: 単発ニュースではなく、まとまった作品シリーズ、プロジェクト、ポートフォリオを紹介している可能性が高い記事です。
+
+自分の撮影に役立ちそうな点: 反復するモチーフ、写真の並び、編集、1枚ずつの写真がどう意味を積み重ねるかを考える材料になります。 一致キーワード（project）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
+
+## Nicolai Howalt – Fungi
+
+ソース: Photobook Journal
+URL: https://photobookjournal.com/2026/09/02/nicolai-howalt-fungi/
+日付: 2026-09-02
+記事タイプ: 写真集 (Photobook)
+作家名: Nicolai Howalt
+作品・シリーズ・写真集・展示名: Fungi
+判定ストリートジャンル: ストリートポートレート (Street Portrait)
+一致キーワード: encounter, photobook, review
+関連度スコア: 15.05
 
 選んだ理由: 写真集、モノグラフ、ZINE、出版社に関する語があり、作品が編集・順序・出版を通じて形になっている記事です。
 
-自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（photobook, project, review）を、記事を読むときの観察メモとして使えます。 構図、色、写真の並び、展示文脈によって日常の街の素材が作品になる過程を見ると参考になります。
+自分の撮影に役立ちそうな点: ストリート写真を単発の1枚ではなく、写真集としてどう構成できるかを学ぶ材料になります。 一致キーワード（encounter, photobook, review）を、記事を読むときの観察メモとして使えます。
 
 ## 取得メモ
 
